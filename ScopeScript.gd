@@ -2,13 +2,13 @@ extends Node
 
 
 # Member Variables
-var classScope = 'Class Scope'
+var classScope = 'Class scope'
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
 	
-	print('\nClass Scope: ', classScope)
+	print('\nClass scope: ', classScope)
 	
 	# run function
 	scope()
@@ -18,11 +18,11 @@ func _ready():
 
 
 func scope():
-	var functionScope = 'Function Scope'
+	var functionScope = 'Function scope'
 	print('\nFunction scope: ', functionScope)
-	print('Class Scope: ', classScope)
+	print('Class scope: ', classScope)
 	
 	for i in 1:
 		print('\nBlock code scope var i: ', i)
 		print('Function scope: ', functionScope)
-		print('Class Scope: ', classScope)
+		print('Class scope: ', classScope)
